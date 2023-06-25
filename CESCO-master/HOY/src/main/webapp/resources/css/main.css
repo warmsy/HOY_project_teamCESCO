@@ -1,0 +1,987 @@
+@charset "UTF-8";
+/* BASE //////////////////////////////////////////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #493c37;
+}
+
+p, h1, h2, h3, h4, h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #493c37;
+}
+
+a {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #493c37;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  width: 375px;
+  min-height: 812px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #f4efe2;
+}
+
+/* 공통 버튼 //////////////////////////////////////////////////////////*/
+.btn_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  color: #493c37;
+}
+
+.btn_menu {
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #493c37;
+}
+
+.btn_menu > img {
+  width: 100% !important;
+}
+
+.btn_analysis {
+  width: 36px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+
+/* 메뉴 ///////////////////////////////////////////////////////////////*/
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: #493c37;
+  z-index: 9;
+  transition : 0.2s linear;
+}
+
+#menu .btn_close {
+	color: #f4efe2;
+	opacity : 0;
+}
+
+#menu > ul {
+  padding-top: 4em;
+}
+
+
+#menu > ul > li > a {
+  text-decoration: none;
+  display: block;
+  color:#f4efe2;
+  padding: 1em 1.4em;
+  width: 100%;
+  box-sizing : border-box;
+  font-size: 16px;
+  opacity : 0;
+}
+
+#menu > ul > li > a:hover, #menu > ul > li > a:focus {
+  background-color: #c4af9f;
+  color: #493c37;
+  transition: 0.2s linear;
+}
+
+
+/* 1) 로그인 & 회원가입 ///////////////////////////////////////////////*/
+#log_join {
+  text-align: center;
+}
+
+#log_join > img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 10em;
+  padding-bottom: 4.5em;
+}
+
+#log_join > h2 {
+  font-size: 20px;
+  padding-bottom: 8em;
+}
+
+#log_join > .btn {
+  width: 20em;
+  height: 3.8em;
+  line-height: 3.8em;
+  padding: 0 1.4em;
+  margin: 2em auto;
+  box-sizing: border-box;
+  display: block;
+  color: #493c37;
+  border-radius: 2.2em;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  background-color: #c4af9f;
+  text-decoration: none;
+}
+
+#log_join > .btn:hover, #log_join > .btn:focus {
+  border: 2px solid #493c37;
+  transition: 0.2s linear;
+  font-weight: 500;
+  box-shadow: 0 0 5px rgba(73, 60, 55, 0.4);
+}
+
+
+/* 2) 로그인 /////////////////////////////////////////////////////////*/
+#log > img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  padding-top: 5em;
+}
+
+#log > h2 {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 4.5em;
+}
+
+#log > form {
+  width: 20em;
+  margin: auto;
+}
+
+#log > form > input {
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  height: 3.3em;
+  padding: 0 1.2em;
+  margin-top: 0.6em;
+  border-radius: 2em;
+  border: 1px solid #493c37;
+  box-sizing: border-box;
+  background-color: #fffdfa;
+}
+
+#log > form > input:focus {
+  box-shadow: 0 0 5px rgba(73, 60, 55, 0.4);
+}
+
+#log > form > input[type=submit] {
+  border: 2px solid transparent;
+  background-color: #c4af9f;
+  height: 3.5em;
+}
+
+#log > form > input[type=submit]:hover, #log > form > input[type=submit]:focus{
+  border: 2px solid #493c37;
+  transition: 0.2s linear;
+  font-weight: 500;
+  box-shadow: 0 0 5px rgba(73, 60, 55, 0.4);
+}
+
+#log > form > #id {
+  margin-bottom: 2.6em;
+}
+
+#log > form > #pw {
+  margin-bottom: 1em;
+}
+
+#log > form > label {
+  display: block;
+  padding-left: 1.2em;
+}
+
+#log > form > a {
+  display: block;
+  float: right;
+  font-size: 14px;
+  margin-top: -0.3em;
+  margin-bottom: 5em;
+  text-decoration: none;
+  color: #493c37;
+}
+
+#log > form > a:hover, #log > form > a:focus {
+  color: #c4af9f;
+  transition: 0.2 linear;
+} 
+
+#log > form {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 3) 회원가입 ////////////////////////////////////////////////////////*/
+#join > img {
+  display: block;
+  width: 75px;
+  margin: 0 auto;
+  padding-top: 3.2em;
+  padding-bottom: 0.6em;
+}
+
+#join > h2 {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 2em;
+}
+
+#join > form {
+  width: 20em;
+  margin: auto;
+}
+
+#join > form > input {
+  display: block;
+  font-size: 14px;
+  width: 100%;
+  height: 3em;
+  padding: 0 1.2em;
+  margin: 1em auto;
+  border-radius: 2em;
+  border: 1px solid #493c37;
+  box-sizing: border-box;
+  background-color: #fffdfa;
+}
+
+#join > form > input:focus {
+  box-shadow: 0 0 5px rgba(73, 60, 55, 0.4);
+}
+
+#join > form > label {
+  display: block;
+  padding-left: 1.2em;
+}
+
+#join > form > .privacy {
+  width: 20em;
+  margin: 2em auto;
+}
+
+#join > form > .privacy > h3, #join .agree > label {
+  font-size: 14px;
+}
+
+#join > form > input[type="submit"]{
+  border: 2px solid transparent;
+  background-color: #c4af9f;
+  height: 3.5em;
+}
+
+#join > form > input[type="submit"]:focus, #join > form > input[type="submit"]:hover {
+  border: 2px solid #493c37;
+  transition: 0.2s linear;
+  font-weight: 500;
+  box-shadow: 0 0 5px rgba(73, 60, 55, 0.4);
+}
+
+#join > form > .privacy > p {
+  width: 100%;
+  height: 9em;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 0.5em 0.7em;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+  box-sizing: border-box;
+  border: 1px solid #493c37;
+  background-color: #fffdfa;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#join > form > .privacy > .agree {
+  float: right;
+}
+
+#join > form > .privacy::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* 4) 달력 페이지 ////////////////////////////////////////////////////*/
+
+#emotion_calendar {
+  overflow: hidden;
+}
+
+#emotion_calendar > .today {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+#emotion_calendar > .wrap {
+  padding-top: 5em;
+}
+
+#emotion_calendar .sticker {
+  display: block;
+  text-decoration: none;
+}
+
+#emotion_calendar .sticker > img {
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+#emotion_calendar .sticker > h2 {
+  text-align: center;
+  position: relative;
+}
+
+#emotion_calendar .calendar_border {
+  /* width: 100%; */
+  position: absolute;
+  top: 35%;
+  left: -5px;
+  bottom: -10%;
+  right: -5px;
+  background-color: #e8e0da;
+  border-radius: 5em;
+}
+
+#emotion_calendar .mark {
+  width: 15%;
+  height: 1em;
+  position: absolute;
+  top: 45%;
+  left: 42.5%;
+  transform: skewX(160deg);
+  border-radius: 3px;
+  opacity: 0.3;
+}
+
+#calendar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.fc-header-toolbar {
+  /*
+  the calendar will be butting up against the edges,
+  but let's scoot in the header's buttons
+  */
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* 달력 감정 스티커 */
+.calendar_sticker {
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+/* 5) 분석 페이지 ///////////////////////////////////////////////////*/
+#analysis > .wrap {
+  padding-top: 4em;
+}
+
+#analysis > .month {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+.month {
+	cursor : pointer;
+}
+
+#analysis > .date-list {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  background:#e8e0da;
+  border : 1px solid #493c37;
+  padding : 0.4em 0.8em;
+  border-radius : 5px;
+  display:none;
+}
+
+#analysis > .date-list > li {
+	padding: 0.4em 0;
+	position : relative;
+	cursor : pointer;
+}
+
+#analysis > .date-list > li:not(:last-child)::after {
+	content : "";
+	display : block;
+	width : 110%;
+	height : 1px;
+	background : #493c37; 
+	position: absolute;
+	top : 105%;
+	left : 50%;
+	transform : translateX(-50%);
+}
+
+#analysis > .icon-sort-desc {
+	position: absolute;
+  top: 18px;
+  left: 61%;
+  font-weight: 600;
+}
+
+#analysis #chart {
+	width: 20em;
+	margin: auto;
+}
+
+#analysis .icon-circle {
+	font-size: 14px;
+	color: #493c37;
+}
+
+#analysis #chart h2 {
+  margin-bottom: 0.6em;
+}
+
+#analysis #chart > li {
+  padding: 1.3em 0;
+}
+
+#analysis .anal_sticker::after, #analysis .anal_sticker .sticker_view::after, #analysis .anal_sticker .sticker_view > li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#analysis .anal_diary::after, #analysis .anal_diary .sticker_view::after, #analysis .anal_diary .sticker_view > li::after, #analysis .anal_most > div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#analysis .doughnut, #analysis .sticker_view  {
+  width: 50%;
+  height: 160px;
+  float: left;
+  box-sizing: border-box;
+  margin: 1em 0;
+}
+
+#analysis .sticker_view {
+  padding-left: 0.6em;
+}
+
+#analysis .sticker_view > li {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0.3em 0;
+}
+
+#analysis .sticker_view > li > img{
+  height: 30px;
+  float: left;
+  padding: 0 0.6em;
+}
+
+#analysis .sticker_view > li > span {
+  float: left;
+}
+
+#analysis canvas {
+  margin-top: -0.4em;
+}
+
+#analysis .anal_most, #analysis .anal_least {
+  height: 160px;
+}
+
+#analysis .anal_most img, #analysis .anal_least img{
+  width: 40%;
+  padding: 1em;
+  float: left;
+}
+
+#analysis .anal_most h3, #analysis .anal_least h3 {
+  width: 50%;
+  height: 160px;
+  float: left;
+  position: relative;
+}
+
+#analysis .anal_most h3 > span, #analysis .anal_least h3 > span {
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#analysis .anal_most h3 > .mark, #analysis .anal_least h3 > .mark {
+  width: 4em;
+  height: 1.5em;
+  opacity: 0.3;
+  border-radius: 3px;
+  transform: skewX(160deg);
+  position: absolute;
+  top: 48%;
+  left: 30%;
+}
+
+#analysis .anal_diary_title {
+	width: 20em;
+	text-align : center;
+	margin : auto;
+}
+
+#anal_diary {
+		position : relative;
+	}
+	
+#anal_diary .mark {
+  width: 150%;
+  height: 1em;
+  position: absolute;
+  top: 45%;
+  left: -25%;
+  transform: skewX(160deg);
+  border-radius: 3px;
+  opacity: 0.3;
+}
+
+#analysis .anal_diary_title {
+	padding-top: 2em;
+	padding-bottom : 1em;
+	position : relative;
+}
+
+#analysis .anal_diary_title .mark {
+	width: 20em;
+	height: 1em;
+	position: absolute;
+	bottom : 10px;
+	left: 0;
+	transform: skewX(160deg);
+	border-radius: 3px;
+	opacity: 0.3;
+	background-image: linear-gradient(to right, #ed7c78,#fff18a, #a0d094, #909ecf);
+}
+
+#analysis .anal_diary_title > span {
+	width: 20em;
+	height: 1em;
+}
+
+#analysis .clear::after {
+   content: "";
+   display: block;
+   clear:both;
+}
+
+#diary {
+	width : 20em;
+	margin : auto;
+	padding-bottom :2em;
+}
+
+#diary img {
+	width: 53px;
+}
+
+#diary > li {
+	background : #e8e0da;
+	padding : 1em;
+	margin : 1.3em auto;
+	border-radius : 15px;
+}
+
+#diary .diary_wrap::after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+#diary .diary_wrap {
+	border-bottom : 1px solid #493c37;
+	padding : 0.6em 0.6em 1em 0.6em;
+}
+
+#diary .diary_wrap > div:first-child, #diary .diary_wrap > div:last-child {
+	float:left;
+	width: 50%;
+}
+
+#diary .diary_wrap > div:last-child {
+	padding-left : 1em;
+	box-sizing : border-box;
+}
+
+#diary p {
+	padding : 1em 0.6em;
+	font-size : 12px;
+	line-height : 1.4;
+}
+
+#diary h3 {
+	line-height: 1.2;
+}
+
+#diary .diary_wrap span {
+	font-size : 12px;
+	display : block;
+	margin-bottom : 0.6em;
+}
+
+/* 6) 일기 쓰기 페이지 //////////////////////////////////////////////*/
+#write > .wrap {
+  padding-top: 6em; 
+}
+
+#write > .today {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+#write > .date {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+#write img {
+  width: 150PX;
+  display: block;
+  margin: auto;
+}
+
+#write h2 {
+  text-align: center;
+  padding: 0.6em 0 2em 0;
+  position: relative;
+}
+
+#write h2 > span {
+  z-index: 2;
+}
+
+#write .sticker .mark {
+  width: 15%;
+  height: 1em;
+  position: absolute;
+  top: 26%;
+  left: 42.5%;
+  transform: skewX(160deg);
+  border-radius: 3px;
+  opacity: 0.3;
+}
+
+#write form {
+  width: 20em;
+  margin: auto;
+}
+
+#write input {
+  display: block;
+  border: none;
+  background-color: #f4efe2;
+}
+
+#write input[type=text] {
+  width: 100%;
+  height: 2.8em;
+  border-bottom: 1px solid #493c37;
+  margin-top: 2em;
+  margin-bottom: 1.8em;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#write textarea {
+  width: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f4efe2;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#write textarea:focus {
+  outline: none;
+}
+
+#write input[type=submit] {
+  padding: 0.2em 0.6em;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  background: transparent;
+}
+
+/* 감정 스티커 오버레이 */
+#write > .overlay {
+  background-color: #f4efe2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: none;
+}
+
+#write > .overlay > .btn_close {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-size: 2em;
+  color: #493c37;
+}
+
+#write > .overlay ul {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#write > .overlay li {
+  height: 5em;
+  line-height: 5em;
+  padding-bottom: 0.5em;
+}
+
+#write > .overlay > ul > li > img {
+  height: 100%;
+  float: left;
+}
+
+#write > .overlay span {
+  float: left;
+  font-size: 18px;
+  padding: 0 0.8em;
+  margin-left: -1.2em;
+  position: relative;
+}
+
+#write > .overlay .mark {
+  width: 80%;
+  height: 1em;
+  position: absolute;
+  top: 48%;
+  left: 10%;
+  transform: skewX(170deg);
+  border-radius: 3px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#write .emotion > li:nth-child(1) .mark{
+  background-color: #fff18a;
+}
+#write .emotion > li:nth-child(2) .mark{
+  background-color: #fea25e;
+}
+#write .emotion > li:nth-child(3) .mark{
+  background-color: #ffabc0;
+}
+#write .emotion > li:nth-child(4) .mark{
+  background-color: #a0d094;
+}
+#write .emotion > li:nth-child(5) .mark{
+  background-color: #b5b5b5;
+}
+#write .emotion > li:nth-child(6) .mark{
+  background-color: #909ecf;
+}
+#write .emotion > li:nth-child(7) .mark{
+  background-color: #deaeeb;
+}
+#write .emotion > li:nth-child(8) .mark{
+  background-color: #ed7c78;
+}
+
+/* 6) 읽는 페이지 //////////////////////////////////////////////*/
+#read > .wrap {
+  padding-top: 5em;
+}
+
+#read > .today {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+#read > .date {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+#read > .modify {
+  padding: 0.2em 0.6em;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  background: transparent;
+  cursor:pointer;
+  text-decoration: none;
+  color: #493c37;
+}
+
+#read > .modify:focus {
+	color: #493c37;
+}
+
+#read .read_text {
+	position : relative;
+}
+
+#read .mark{
+	width: 15%;
+  height: 1em;
+  position: absolute;
+  top: 45%;
+  left: 42.5%;
+  transform: skewX(160deg);
+  border-radius: 3px;
+  opacity: 0.3;
+}
+
+#read table {
+  margin: auto;
+  width: 20em;
+}
+
+#read table td {
+  display: block;
+}
+
+#read table .read_img img {
+  width: 10em;
+  display: block;
+  margin: auto;
+}
+
+#read table .read_text {
+  text-align: center;
+  padding: 0.8em;
+}
+
+#read table .read_title {
+  width: 100%;
+  margin : auto;
+  line-height: 3em;
+  margin-top: 2em;
+  margin-bottom: 1.8em;
+  padding : 0 1em;
+  border-bottom: 1px solid #493c37;
+  font-size: 16px;
+  box-sizing : border-box;
+}
+
+#read table .read_content {
+  width: 100%;
+  margin : auto;
+  padding : 0 1em;
+  box-sizing : border-box;
+  font-size : 14px;
+  line-height : 1.4;
+}
+ 
+#comment_box {
+  background-color: #e8e0da;
+  padding: 1.5em 1em;
+  border-radius: 15px;
+  margin : 2em 0;
+  position : relative;
+  /* position: fixed;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%); */
+}
+
+#comment_box img {
+	width : 50px;
+	height: 50px;
+	margin-bottom: -20px;
+	padding: 0 1em;
+}
+
+#comment_box td {
+	display: inline-block !important;
+}
+
+#comment_box tbody > tr:first-child {
+	height: 50px;
+}
+
+#comment_box tbody > tr:first-child::after {
+	content : "";
+	display : block;
+	width : 90%;
+	height : 1px;
+	background : #493c37;
+	position : absolute;
+	top : 45%;
+	left : 50%;
+	transform : translateX(-50%);
+}
+
+#comment_box tbody > tr:first-child > td:first-child {
+	padding-left: 1.2em;
+}
+
+#comment_box p {
+  padding: 2em 1em 0 1em;
+  font-size: 14px;
+  line-height: 1.5;
+}
+

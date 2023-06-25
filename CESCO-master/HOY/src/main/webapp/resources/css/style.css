@@ -1,0 +1,891 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* 노토산스 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;900&display=swap');
+
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin :0px;
+    padding: 0px;
+   
+/*     color: #52555A; */
+}
+/* <<<<<<< HEAD
+#first_container {
+	width:414px;
+	min-height: 812px;
+	margin: 0 auto;
+	position: relative;
+	background: #eeeeee;
+}
+
+body #click_img{
+	width:414px;
+	min-height: 812px;
+	margin: 0 auto;
+	position: block;
+}
+
+#first_container{
+	width:100%;
+}
+#click_img{
+	width:100%;
+}
+.main_img{
+	width:100%;
+}
+
+#challenge{
+	width:100%;
+}
+
+p, h1, h2, h3, h4, h5 {
+======= */
+h1, h2, h3, h4, h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  color: #1868FB;
+}
+/* css 수정 부분 */
+#first_container{
+	width:100%
+}
+#click_img{
+	width:100%
+}
+.main_img{
+	width:100%
+}
+#challenge_exercise{
+  width:100%;
+  height: 100%;
+}
+.per_T {
+
+	text-align:left;
+	margin-top:50px;
+	width:95%;
+	height:270px;
+	font-size:15px;
+	color:#595959;
+	border-top: 1px solid #000cff6e;
+    border-collapse: collapse;
+}
+.per_T th{
+	width:45%;
+}
+.per_T tr{
+	border-bottom: 1px solid #000cff6e;
+    border-collapse: collapse;
+}
+#challenge_exercise > div > span{
+  color: var(--title-color);
+  display: flex;
+  text-align:left;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#challenge{
+	width:100%
+}
+/* 도전모드버튼 */
+#challenge_btn{
+	font-size:20px;
+	color:#fff;
+	display: flex;
+    margin-top: 40 px;
+    width: 100%;
+    height: 65 px;
+    border-radius: 10 px;
+    background-color: #65C9DF;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    font-family: 'Alfa Slab One';
+    border: none;
+    margin: auto;
+}
+/* ========카테고리====== */
+.chal_category{
+  display: flex;
+  width: 286px;
+  height: 96px;
+  z-index:0!important;
+}
+.chal_category > li{
+  flex: 1;
+  width: 86;
+  height: 86px;
+}
+#chal_img{
+  display: flex;
+  width: 100%;
+  height: 70%;
+
+}
+
+#challenge > div > span{
+  color: var(--hoy-color);
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+#challenge > .category_detail{
+  display: flex;
+  padding-left: 15px;
+}
+/* 운동 리스트 */
+#challenge > div.category_list > ul > li > div > a > div > p {
+	color:#52555A
+}
+
+#challenge > .category_detail > h4{
+  padding-left: 8px;
+  color: var(--title-color);
+  display: flex;
+  flex: 6;
+  text-align: left;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.category_list > ul{
+  padding-left: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.img_list{
+  padding: auto;
+  margin: 20px auto;
+  width: 100%;
+  height: 105px;
+  display: flex;
+}
+.img_list > a{
+  margin-bottom: 20px;
+  padding: 10px;
+  flex: 3;
+  width: 100%;
+  height: 115px;
+  display: flex;
+/*   background-color: rgb(255, 246, 235); */
+}
+
+.img_list > a > img{
+  flex: 3;
+  background-color:#ffdeac;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.img_list > a > div{
+  display: flex;
+  text-align: left;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.img_list{
+  padding: auto;
+  margin: 20px auto;
+  width: 100%;
+  height: 105px;
+  display: flex;
+}
+.img_list2 > a{
+  margin-bottom: 20px;
+  padding: 10px;
+  flex: 3;
+  width: 100%;
+  height: 115px;
+  display: flex;
+/*   background-color: rgb(255, 246, 235); */
+}
+.chal_img_ing {
+    display: flex;
+    margin-top: 40px;
+    width: 340px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: #ffdeac;
+}
+
+#chal_img1{
+	display: flex;
+    margin-top: 40px;
+    width: 340px;
+    height: 250px;
+    border-radius: 30px;
+    background-color:#d2e3ff;
+	
+}
+.img_list2 > a > img{
+  flex: 3;
+  background-color:#d2e3ff;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.img_list2 > a > div{
+  display: flex;
+  text-align: left;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.chal_btn_done{
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  height: 65px;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.chal_btn_done > a{
+  flex:1;
+  align-items: center;
+  padding: 5px;
+  width: 330px;
+  height: 65px;
+  border-radius: 10px;
+
+}
+
+.chal_btn_done > a > span{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 330px;
+  height: 65px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--hoy-color);
+  color: var(--login-back);
+  font-family:'Alfa Slab One', cursive;
+  justify-content: center;
+}
+
+.chal_btn_check{
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  height: 65px;
+  border-radius: 10px;
+
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.chal_btn_check > a{
+  flex:1;
+  align-items: center;
+  padding: 5px;
+  width: 330px;
+  height: 65px;
+  border-radius: 10px;
+
+}
+
+.chal_btn_check > a > span{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 330px;
+  height: 65px;
+  border: none;
+  border-radius: 10px;
+  background-color: #65C9DF;
+  color: var(--login-back);
+  font-family:'Alfa Slab One', cursive;
+  justify-content: center;
+}
+/* ===================포인트박스 */
+.text_box{
+  padding: 10px;
+  margin: 15px;
+  width: 230;
+  height: 160;
+  background-color: var(--hoy-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+.text_box > p{
+  font-size: 20px;
+  color: #FFF;
+  font-family:'Alfa Slab One', cursive;
+
+}
+.chal_category > li > div{
+  align-items: center;
+  width: 86;
+  height: 86px;
+}
+.chal_category > li > div > a >img{
+  align-items: center;
+  width: 86;
+  height: 86px;
+} 
+ .chal_category > li > div > img{
+  align-items: center;
+  width: 86;
+  height: 86px;
+} 
+
+.category_sm{
+  width: 40px;
+  height: 40px;
+}
+
+.chal_img_ing{
+  display: flex;
+  margin-top: 40px;
+  width: 340px;
+  height: 250px;
+  border-radius: 30px;
+  background-color: #ffdeac;
+}
+.chal_img_ing > img{
+  flex: 1;
+}
+.chal_ing > div > h2{
+  margin-top: 32px;
+  font-family:'Alfa Slab One', cursive;
+  text-align: center;
+}
+.chal_ing > div > p{
+  margin-top: 5px;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--hoy-color);
+}
+.chal_btn{
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  height: 65px;
+  border-radius: 10px;
+  background-color: #65C9DF;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+.chal_btn > a{
+  flex:1;
+  align-items: center;
+  padding: 5px;
+  width: 330px;
+  height: 65px;
+  border-radius: 10px;
+
+}
+.chal_btn > a > span{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 330px;
+  height: 65px;
+  border: none;
+  border-radius: 10px;
+  background-color:#65C9DF;
+  color: var(--login-back);
+  font-family:'Alfa Slab One', cursive;
+  justify-content: center;
+}
+/* css 수정 부분끝 */
+/* 아이콘 */
+
+.material-icons-outlined.md-36 { font-size: 36px; }
+.material-icons-outlined{
+    font-family: 'Material Icons outlined';
+    /* 위에 컬러 바꿈 */
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3rem;
+  
+
+  /*========== Colors ==========*/
+  --hue: 174;
+  --sat: 63%;
+  --first-color: hsl(var(--hue), var(--sat), 40%);
+  --first-color-alt: hsl(var(--hue), var(--sat), 36%);
+  --title-color: #52555A;
+  --text-color: hsl(var(--hue), 8%, 35%);
+  --body-color: hsl(var(--hue), 100%, 99%);
+  --container-color: #FFF;
+  --hoy-color:#1868FB;
+  --login-back:#EFF2FF;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+
+
+/*=============== LAYOUT ===============*/
+
+.container {
+  
+  max-width: 414px;
+  margin-left: 4px;
+  margin-right: 1rem;
+  margin-top: 10px;
+  overflow : auto;
+}
+/* challenge css */
+#challenge {
+  align-content: center;
+    display: block;
+    width: 350px;
+    height: 700px;
+    margin-left: 2em;
+    margin-right: 2rem;
+    padding-top: 85px;
+    justify-content: center;
+}
+
+#image{
+  align-content: center;
+  display:block;
+  width: 350px;
+  height: 700px;
+  margin-left: 2em;
+  margin-right: 2rem;
+  margin-top: 85px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#challenge_title{
+  margin-top: 2em;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--container-color);
+  z-index: var(--z-fixed);
+  transition: .4s;
+}
+
+/*=============== NAV ===============*/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: #FFF;
+  font-weight: 900;
+  background-color: var(--hoy-color);
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--container-color);
+    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15); /* 그림자 */
+    width: 100%;
+    height: 4rem;
+    padding: none;
+    display: grid;
+    align-content: center;
+    border-radius: 1.25rem 1.25rem 0 0;
+    transition: .4s;
+  }
+}
+
+.nav__list, 
+.nav__link {
+  display: flex;
+}
+
+.nav__link {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3px;
+  color: var(--title-color); /* 컬러 바꾸려면 맨위의 컬러 바꾸기 */
+  font-weight: 600;
+}
+
+.nav__list {
+  justify-content: space-around;
+}
+
+/*Active link*/
+.active-link {
+  position: relative;
+  color: var(--first-color);
+  transition: .3s;
+}
+
+/*=============== MEDIA QUERIES ===============*/
+
+  /* First design, remove if you choose the minimalist design */
+  .active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    width: 4px;
+    height: 4px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+  }
+
+
+#header1 {
+  display: grid;
+  justify-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--hoy-color);
+  width: 100%;
+  height: 85px;
+}
+/* 호이 메인 머릿글 */
+
+#header1 > a{
+  font-family: 'Righteous', cursive;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-weight: 900;
+  font-size: 30px;
+  text-decoration: none;
+}
+#calendar_container { 
+  position: absolute;
+  top: 85px;
+  left: 0;
+  background-color: #FFF;
+  width: 100%;
+  height: 800px;
+}
+
+html, body {
+  overflow: hidden; /* don't do scrollbars */
+}
+
+#calendar-container {
+  position: fixed;
+}
+
+.fc-header-toolbar {
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+
+#statics_container{
+  position: absolute;
+  top: 85px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 300px;
+}
+
+.monthly_mood{
+  padding-top:22px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 500; 
+  width: 100%;
+  height: 300px;
+}
+#statics_container > div > h2{
+	margin-left:20px;
+}
+#monthly_mood > h2{
+	margin-left:20px;
+}
+.monthly_mood > canvas{
+  width: 100%;
+  height: 300px;
+}
+
+#chartContainer{
+  flex:1;
+  width: 100%;
+  height: 300px;
+}
+
+#statics_container2{
+  position: absolute;
+  top: 435px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 350px;
+}
+
+/* 로그인 페이지 css */
+
+#login{
+  background-color: var(--login-back);
+  margin-top: 3em;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.static_list{
+	dispaly:flex;
+	width:360px;
+	height:300px;
+}
+.static_list > li {
+	flex:1;
+	width:360px;
+	height:80px;
+}
+.static_list > li > div{
+display: flex;
+    flex: 1;
+    width: 360px;
+    height: 80px;
+    margin-left: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    color:#52555A;
+	
+}
+
+.static_list > li > div > img{
+	width:70px;
+	height:70px;
+}
+
+#monthly_mood > ul > li > div > div{
+	display: flex;
+    flex-direction: column;
+    margin-left:10px;
+}
+
+.index{
+  display: block;
+  width: 120px;
+  height: 55px;
+  border-bottom: 1px solid --hoy-color;
+  margin-top: 3em;
+  margin-bottom: 5px;
+  margin-right: 3px;
+  align-items: center;
+  
+}
+.btn_box{
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3em;
+  flex-wrappx: wrap;
+  margin-top : 3em;
+}
+
+.btn_blue{
+  display: block;
+  width: 20em;
+  height: 3.8em;
+  background-color: var(--hoy-color);
+  border: 1px solid var(--hoy-color);
+  color: #FFF;
+  font-weight: 500px;
+  border-radius: 5px;
+  padding: 0 1.4em;
+  margin: 1em;
+}
+
+#login .join_btn{
+  width: 105px;
+  height: 50px;
+  margin-top: 2em;
+  margin-right: 7px;
+  border-radius: 5px;
+  background-color: var(--hoy-color);
+  border: 1px solid var(--hoy-color);
+  color: #fff;
+}
+
+#login .login_btn{
+  width: 95px;
+  height: 50px;
+  margin-top: 2em;
+  margin-right: 3px;
+  border-radius: 5px;
+  background-color: var(--hoy-color);
+  border: 1px solid var(--hoy-color);
+  color: #fff;
+}
+
+#login input[type=text],input[type=password]{
+  display: block;
+  width: 90%;
+  height: 2.8em;
+  border-bottom: 1px solid --hoy-color;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 3px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login1{
+  font-weight:900;
+}
+.login_bnt{
+  width: 50%;
+}
+.join_bnt{
+    width: 50%;
+
+}
+
+#loginform>input{
+  display: flex;
+}
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.form-control{
+  /* display: block; */
+  width: 90%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#joinbtn{
+  margin-top: 1em;
+  width: 90%;
+  height: 40px;
+  background-color: var(--hoy-color);
+  border: 1px solid var(--hoy-color);
+  border-radius: 5px;
+  color: #FFF;
+  font-weight: 600;
+}
+#bbtn{
+  margin-top: 1em;
+  width: 90%;
+  height: 40px;
+  background-color: var(--hoy-color);
+  border: 1px solid var(--hoy-color);
+  border-radius: 5px;
+  color: #FFF;
+  font-weight: 600;
+}
+.gap-3 {
+  gap: 2px !important;
+}
+/* 파일 제출 버튼 css */
+#camera{
+	font-size:16px;
+	background:white;
+	border-radius:10px;
+	width:250px;
+	height:100px;
+	outline:none;
+	color:#212529;
+}
+#up{
+	font-size:16px;
+	background:white;
+	border-radius:10px;
+	width:60px;
+	height:35px;
+	outline:none;
+	color:#212529;
+	border:solid 1px #1868FB;
+	
+}
+::-webkit-file-upload-button {
+			color:#fff;
+			border-radius:10px;
+            cursor: pointer;
+            margin-top: 25px;
+            display: inline-block;
+            padding: 6px;
+            padding-right: 29px;
+            height:35px;
+            padding-left: 29px;
+            background-color:#1868FB;
+            font-size: 15px;
+            position: relative;
+            border: none;
+}

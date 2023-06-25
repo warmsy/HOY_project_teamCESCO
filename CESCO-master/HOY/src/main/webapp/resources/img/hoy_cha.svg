@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="420px"
+	 height="900px" viewBox="0 0 420 900" enable-background="new 0 0 420 900" xml:space="preserve">
+<g id="레이어_1" display="none">
+	
+		<image display="inline" overflow="visible" opacity="0.5" width="319" height="646" xlink:href="41ED7131.jpg"  transform="matrix(1.5047 0 0 1.5047 -24.0068 -39.0322)">
+	</image>
+</g>
+<g id="레이어_5" display="none">
+</g>
+<g id="레이어_2" display="none">
+	<path fill="#3751FE" d="M318.855,302c0,21.653-17.559,39-39.211,39h-60.037l-10.543,16.408L199.723,341h-60.368
+		c-21.653,0-39.211-17.347-39.211-39c0-10.822,4.392-20.528,11.484-27.621c7.093-7.093,16.904-11.379,27.727-11.379h140.289
+		C301.297,263,318.855,280.347,318.855,302z"/>
+	<g id="레이어_4" display="inline">
+		<g>
+			<defs>
+				<path id="SVGID_1_" d="M-9.667,521.667c0,0,164.341-82.667,446,119.333l48.666,282l-498-5.333L-9.667,521.667z"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<rect x="-3" y="505" clip-path="url(#SVGID_2_)" fill="#001AFF" width="430" height="402"/>
+		</g>
+		<g>
+			<defs>
+				<rect id="SVGID_3_" x="108" y="-6" width="319" height="289"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<path clip-path="url(#SVGID_4_)" fill="#FFD400" d="M107.667-6.167c0,0,22,205.833,345.333,279.833V-6L107.667-6.167z"/>
+		</g>
+		<g>
+			<defs>
+				<rect id="SVGID_5_" y="-6" width="236" height="499"/>
+			</defs>
+			<clipPath id="SVGID_6_">
+				<use xlink:href="#SVGID_5_"  overflow="visible"/>
+			</clipPath>
+			<path clip-path="url(#SVGID_6_)" fill="#75D68A" d="M0-6.167L205,0c0,0-4.667,314.333-214.667,497L0-6.167z"/>
+		</g>
+	</g>
+</g>
+<g id="레이어_6">
+	<ellipse fill="#193693" cx="218" cy="614.502" rx="128" ry="25.501"/>
+	<g id="호이.tiff">
+		
+			<image overflow="visible" width="2048" height="2048" id="호이" xlink:href="41ED7133.png"  transform="matrix(0.2565 0 0 0.2565 -60.5015 204.333)">
+		</image>
+	</g>
+</g>
+</svg>

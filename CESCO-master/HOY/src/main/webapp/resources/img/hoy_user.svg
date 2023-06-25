@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="1235px" height="1235px" viewBox="0 0 1235 1235" enable-background="new 0 0 1235 1235" xml:space="preserve">
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="617.443" cy="619.482" r="612.973"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<circle clip-path="url(#SVGID_2_)" fill="#176EF6" cx="617.443" cy="619.482" r="612.973"/>
+	<g id="호이캐릭터_2_" clip-path="url(#SVGID_2_)">
+		<path fill="#FFB231" stroke="#FFB231" stroke-width="7" stroke-miterlimit="10" d="M1162.405,1216.895L982.473,592.712
+			c0,0-59.191-165.841-146.947-207.315c-57.518-40.192-133.926-64.673-217.769-64.673c-80.549,0-154.161,22.582-210.844,60.031
+			c-0.053,0-0.107,0.055-0.164,0.112c-87.642,41.526-146.725,189.483-146.725,189.483L15.929,1216.895
+			c-101.729,229.002,78.308,392.441,87.25,400.38c0.229,0.224,0.337,0.34,0.337,0.34c48.409,50.305,115.481,84.654,190.045,87.56
+			c0.339,0.061,0.727,2.326,1.119,2.326h19.896l559.071-2.046c79.033,0,150.413-34.003,201.224-86.827c0,0,0.107-0.644,0.331-0.812
+			C1084.09,1609.875,1264.191,1445.896,1162.405,1216.895z M293.562,1702.961v-0.054c0.223,0.054,0.503,0.054,0.787,0.054H293.562z"
+			/>
+		<g>
+			
+				<line fill="none" stroke="#2E2E2E" stroke-width="41" stroke-linecap="round" stroke-miterlimit="10" x1="676.5" y1="580" x2="676.5" y2="625"/>
+			
+				<line fill="none" stroke="#2E2E2E" stroke-width="41" stroke-linecap="round" stroke-miterlimit="10" x1="558.5" y1="580" x2="558.5" y2="625"/>
+			<path fill="none" stroke="#2E2E2E" stroke-width="39.1268" stroke-linecap="round" stroke-miterlimit="10" d="M657.583,683.793
+				c0,22.379-18.147,40.523-40.524,40.523c-22.382,0-40.524-18.145-40.524-40.523"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.chatMapper">
+
+	
+	<insert id="insert_botChatting"
+		parameterType="kr.smhrd.mapper.ChatVO">
+		insert into chattings(mb_id, chat_chatbot
+		) 
+		values (#{mb_id},#{chat_chatbot}
+		)
+	</insert>
+	
+	<insert id="insert_userChatting"
+		parameterType="kr.smhrd.mapper.ChatVO">
+		insert into chattings(mb_id,chat_user
+		) 
+		values (#{mb_id},#{chat_user}
+		)
+	</insert>
+	
+		
+</mapper>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.mychMapper">
+
+            
+	  <insert id ="insertch" parameterType="kr.smhrd.mapper.MychallengesVO">    
+       insert into mychallenges(ch_seq, mb_id, mc_success, mc_end) 
+		values (#{ch_seq},#{mb_id},0,now()+interval 14 day)
+          </insert>
+          
+		<select id="selectch" resultType="kr.smhrd.mapper.MychallengesVO">
+	      select * from mychallenges m, challenges c
+	      where m.mb_id=#{mb_id}
+	      and  now() &lt; m.mc_end
+	      and c.ch_seq=m.ch_seq
+	      order by m.mc_start desc
+	  </select> 
+	  
+		
+		<select id="selectsub" resultType="kr.smhrd.mapper.MychallengesVO">
+	      select * from mychallenges m, challenges c
+	      where m.mc_seq=#{mc_seq}
+	      and c.ch_seq=m.ch_seq
+	  </select>
+	  
+		<insert id="subinsert" parameterType="kr.smhrd.mapper.MychallengesVO">
+	      insert into submissions(mc_seq, mb_id, sub_result, sub_img) 
+	      values (#{mc_seq},#{mb_id},0,#{sub_img})
+	  </insert>
+	  
+		<select id="staticsch" resultType="kr.smhrd.mapper.MychallengesVO">
+		select 
+       count(case when c.ch_kind = 1 then 1 end) as kind1,
+      count(case when c.ch_kind = 2 then 1 end) as kind2,
+      count(case when c.ch_kind = 3 then 1 end) as kind3
+      from mychallenges m, challenges c
+       where c.ch_seq=m.ch_seq
+       and m.mb_id= #{mb_id}
+       </select>
+       
+       <select id="staticsch__" resultType="kr.smhrd.mapper.MychallengesVO">
+		select 
+       count(case when c.ch_kind = 1 then 1 end) as kind1,
+      count(case when c.ch_kind = 2 then 1 end) as kind2,
+      count(case when c.ch_kind = 3 then 1 end) as kind3
+      from mychallenges m, challenges c
+       where c.ch_seq=m.ch_seq
+       and m.mb_id= #{mb_id}
+       and m.mc_success = 1
+       </select>
+	  
+		<select id="selectcountsuc" resultType="int">
+		    select count(mc_seq) from mychallenges where mc_success=1 and ch_seq = #{ch_seq}
+
+		    </select>
+		    
+		<select id="selectcountch" resultType="int">
+		    select count(mc_seq) from mychallenges where ch_seq = #{ch_seq}
+		</select>
+          
+	  	<select id="selectcountmych" resultType="int">
+		    select count(ch_seq) from mychallenges where mb_id = #{mb_id} and ch_seq=#{ch_seq} and mc_success=0
+		</select>
+	 
+
+	  	
+	
+
+</mapper>
+    

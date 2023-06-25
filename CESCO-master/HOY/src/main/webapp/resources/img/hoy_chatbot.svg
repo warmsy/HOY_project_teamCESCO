@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="1235px" height="1235px" viewBox="0 0 1235 1235" enable-background="new 0 0 1235 1235" xml:space="preserve">
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="617.997" cy="617.17" r="614.06"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<circle clip-path="url(#SVGID_2_)" fill="#FFEEBC" cx="617.997" cy="617.17" r="614.06"/>
+	<g id="호이캐릭터_1_" clip-path="url(#SVGID_2_)">
+		<path fill="#FFB231" stroke="#FFB231" stroke-width="7" stroke-miterlimit="10" d="M1163.926,1215.641l-180.251-625.29
+			c0,0-59.296-166.136-147.208-207.683c-57.622-40.264-134.162-64.788-218.156-64.788c-80.69,0-154.434,22.623-211.216,60.139
+			c-0.054,0-0.107,0.054-0.165,0.111c-87.798,41.602-146.985,189.821-146.985,189.821L15.416,1215.641
+			c-101.908,229.408,78.447,393.138,87.404,401.09c0.231,0.224,0.338,0.339,0.338,0.339
+			c48.495,50.396,115.686,84.497,190.383,87.407c0.338,0.061,0.728,2.023,1.12,2.023h19.932l560.063-1.742
+			c79.174,0,150.68-33.909,201.581-86.826c0,0,0.107-0.568,0.33-0.736C1085.472,1609.242,1265.892,1445.049,1163.926,1215.641z
+			 M293.542,1702.568v-0.055c0.223,0.055,0.504,0.055,0.789,0.055H293.542z"/>
+		<g>
+			
+				<line fill="none" stroke="#2E2E2E" stroke-width="41" stroke-linecap="round" stroke-miterlimit="10" x1="676.5" y1="578" x2="676.5" y2="622"/>
+			
+				<line fill="none" stroke="#2E2E2E" stroke-width="41" stroke-linecap="round" stroke-miterlimit="10" x1="558.5" y1="578" x2="558.5" y2="622"/>
+			<path fill="none" stroke="#2E2E2E" stroke-width="39.1962" stroke-linecap="round" stroke-miterlimit="10" d="M658.207,681.595
+				c0,22.418-18.178,40.596-40.595,40.596c-22.422,0-40.597-18.178-40.597-40.596"/>
+		</g>
+	</g>
+</g>
+</svg>

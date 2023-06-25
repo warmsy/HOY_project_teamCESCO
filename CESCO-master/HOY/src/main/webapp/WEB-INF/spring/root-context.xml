@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+   xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd
+   http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+   <!-- Root Context: defines shared resources visible to all other web components -->   
+   <!-- API(spring(web mvc) + mybatis(db)) 스프링에서 mybatis를 연결하는 것이다! Spring이 큰 개념 -->   
+   <!-- API(spring(web mvc) API(HikariDBCP DataBaseConnectionPool)-->
+   <!-- xml에서 객체를 생성하는 방법은 bean(객체라는 뜻)태그를 사용한다. -->
+   
+     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    <!--  파일업로드 용량 (10MB)-->
+    <property name="maxUploadSize" value="10485760"/>
+    <property name="defaultEncoding" value="UTF-8" />
+  </bean>
+  
+  <!--  파일업로드 디렉토리 설정 -->
+  <bean id="uploadPath" class="java.lang.String">
+    <constructor-arg value="[C:\Users\bigdata02\git\CESCO\HOY]"/>
+  </bean>
+      
+      <!-- 히카리 CP 빈 DB정보 등록 -->
+   		<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+       <!-- 프로퍼티가 속성이다! --> 
+      <property name="driverClassName"
+         value="com.mysql.jdbc.Driver">
+      </property>
+      <property name="jdbcUrl"
+         value="jdbc:mysql://project-db-stu.ddns.net:3307/campus_E_3_1022?characterEncoding=UTF-8&amp;serverTimezone=UTC">
+      </property>
+         <property name="username" value="com"></property>
+         <property name="password" value="12345"></property>
+  		 </bean>   
+      
+   <!-- 히카리 CP DB ConnectionPool을 설정 -->
+   <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource"
+      destroy-method="close">
+      <constructor-arg ref="hikariConfig"/>
+      </bean> 
+   
+   <!-- mybatis와 Spring이 연동할 api 설정 -->
+   <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+      <property name="dataSource" ref="dataSource"> </property>
+        <!-- 추가 부분 -->
+         <property name="configLocation" value="classpath:/mybatis-config.xml"></property>
+   </bean>
+ 
+   
+   <!-- 추가  mybatis SqlSessionFactoryBean 
+   <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>-->
+
+   <mybatis-spring:scan base-package="kr.smhrd.mapper"/>
+</beans>

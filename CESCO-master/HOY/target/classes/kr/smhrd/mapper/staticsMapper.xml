@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.staticsMapper">
+<!-- mychallendar 가져오기 	-->
+	  <select id ="countingemotionsAjax" resultType="kr.smhrd.mapper.MyCalendarVO">    
+       select 
+       count(case when mood_type = 0 then 1 end) as emotion0,
+		count(case when mood_type = 1 then 1 end) as emotion1,
+		count(case when mood_type = 2 then 1 end) as emotion2,
+		count(case when mood_type = 3 then 1 end) as emotion3
+		from mycalendar
+       where mb_id = #{mb_id} and DATE_FORMAT(mood_date, '%Y-%m') = '2021-11'
+          </select>
+          
+</mapper>
